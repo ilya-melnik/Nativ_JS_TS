@@ -13,23 +13,14 @@ export function splitIntoWord(sentense: string){
 }
 //-----------------------------------------------------------------------------------------------------------
 
-// export type Touppercasetype = {
-//     value: string;
-// }
-// export function Touppercase(props: Touppercasetype){
-//     return <h1>{props.value.toUpperCase().replace('A', 'a')}</h1
-// }
-
-export function sum1 (a:number, b: number){
-    return  a + b
+export type Touppercasetype = {
+    value: string;
 }
-
-
-let res;
-
-export function replace (sentence: string){
-
-    return res = sentence.replace(/\s/g, "-")
-    alert(res)
+export function Touppercase(props: Touppercasetype){
+    return (
+        <h1>
+            {props.value.toUpperCase().replaceAll('A', 'a')}
+        </h1>
+    )
 }
 

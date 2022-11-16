@@ -1,5 +1,5 @@
 import {StudentType} from "../02-object-test/02";
-import {AddSkill, doesStudentLiveIn, StudentCity, SwetchActive} from "./03";
+import {AddSkill, doesStudentLiveIn, SwetchActive} from "./03";
 
 let student: StudentType;
 

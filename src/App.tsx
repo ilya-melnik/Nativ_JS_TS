@@ -6,6 +6,8 @@ import {Filter} from "./04-filter/04";
 import {Map} from "./05-map/05";
 import Callback from "./06-callBack-onClick-onChange-onBlure/callback";
 
+
+
 function App() {
     console.log(student)
   return (
@@ -14,6 +16,7 @@ function App() {
         {/*<Filter />*/}
         {/*<Map />*/}
         <Callback />
+
     </div>
   );
 }

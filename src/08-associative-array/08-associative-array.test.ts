@@ -1,5 +1,6 @@
 import {UserType} from "./08-associative-array";
 
+
 let users: UserType
 beforeEach(() => {
     users = {

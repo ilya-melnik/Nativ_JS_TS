@@ -83,16 +83,19 @@ export const removeBooksToUser = (u: UserWithLaptopType & UserWithBooksType, old
 })
 export const updateCompanyTitle = (u: WithCompanisType, idCompany: number, titleNewCompany: string) => ({
     ...u,
-    companis: u.companis.map(c=> c.id === idCompany? {...c, title: titleNewCompany}:c)
+    companis: u.companis.map(c => c.id === idCompany ? {...c, title: titleNewCompany} : c)
 })
 
 
-export const updateCompanyTitle2 = (companies: { [key: string]: Array<CompanyType> }, userName:string, idCompany: number, titleNewCompany: string) =>
-    {
-        let companyCopy = {...companies}
-        companyCopy[userName] = companyCopy[userName].map(c=> c.id === idCompany? {...c, title: titleNewCompany}:c)
+export const updateCompanyTitle2 = (
+    companies: { [key: string]: Array<CompanyType> }, userName: string,
+    idCompany: number,
+    titleNewCompany: string) => {
 
-        return companyCopy
-
+    return {
+        ...companies,
+        [userName]: companies[userName].map(c => c.id === idCompany ? {...c, title: titleNewCompany} : c)
     }
+
+}
 
